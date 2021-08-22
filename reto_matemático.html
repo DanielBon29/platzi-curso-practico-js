@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Matemático 1 | JS Challenge</title>
+    <link rel="stylesheet" href="./reto_matemático.css">
+</head>
+<body>
+    <section>
+        <h1 id="title">Reto: matemáticas con JavaScript</h1>
+        <p id="description">Ingrese la longitud (en centimetros) de los 3 lados de un triángulo isósceles para poder calcular su altura. 
+            Recuerde que un triángulo isósceles se caracteriza por tener solo 2 lados iguales.</p>
+        <form id="form">
+            <div class="container">
+                <label >Longitud Lado 1 (cm)</label>
+                <input id= "InputLado1" type="number" min="0">
+            </div>
+            <div class="container">
+                <label >Longitud Lado 2 (cm)</label>
+                <input id= "InputLado2" type="number" min="0">
+            </div>
+            <div class="container">
+                <label >Longitud Lado 3 (cm)</label>
+                <input id= "InputLado3" type="number" min="0">
+            </div>
+            <button id= "CalcularButton" type="button" onclick="CalcularAltura()">Calcular altura</button>
+
+            <button id= "BorrarButton" type="submit">Borrar longitudes</button>
+        </form>
+        <h2 id= "mensajeResultado"></h2> 
+    </section>
+    <script src="./reto_matemático.js"></script>
+</body>
+</html>
