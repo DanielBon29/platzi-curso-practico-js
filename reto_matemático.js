@@ -39,5 +39,5 @@ function CalcularAltura () {
         };
     };
 
-    document.getElementById("mensajeResultado").innerHTML = mensajeResultado;
+    document.getElementById("mensajeResultado").innerText = mensajeResultado;
 };
