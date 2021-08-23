@@ -1,0 +1,97 @@
+#ContenidoContainer {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+#ImagenContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 3%;
+}
+#ImagenContainer img{
+    object-fit: contain;
+    height: 60%;
+}
+#InfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 3%;
+}
+#PlanesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+article {
+    position: relative;
+    margin: 15px 0px;
+    width: 30%;
+    height: 150px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+article div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
+article input {
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+input[type=checkbox]:checked ~ div {
+    background-color: #50bcf2;
+  }
+#CuponContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    justify-content: flex-end;
+    align-items: center;
+}
+#validaCupon{
+    margin: 0px 20px 0px 0px;
+}
+#InputCupon {
+    margin-left: 15px;
+    padding: 1%;
+    font-size: 18px;
+    text-align: center;
+}
+#PrecioFinal {
+    display: flex;
+    flex-direction: row; 
+    margin: 15px 0px;
+    justify-content: flex-end;
+}
+#PrecioFinalContainer p{
+    margin: 10px 5px;
+}
+#ButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ComprarButton {
+    width: 50%;
+    height: 50%;
+    margin: 5% 0%;
+    font-size: 18px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #6BC628 ;
+    color: white;
+    font-weight: bold;
+}
