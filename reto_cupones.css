@@ -1,3 +1,6 @@
+body{
+    background-color: teal;
+}
 #ContenidoContainer {
     width: 100%;
     height: 70vh;
@@ -19,6 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 70%;
+    height: 60%;
     margin: 3%;
 }
 #PlanesContainer {
@@ -31,8 +35,9 @@ article {
     margin: 15px 0px;
     width: 30%;
     height: 150px;
-    border: 2px solid black;
+    border: 0.5px solid gray;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 article div {
     width: 100%;
@@ -42,6 +47,8 @@ article div {
     justify-content: center;
     align-items: center;
     line-height: 25px;
+    border-radius: 10px;
+    background-color: #B2FCE8;
 }
 article input {
     position: absolute;
@@ -52,8 +59,16 @@ article input {
     cursor: pointer;
 }
 input[type=checkbox]:checked ~ div {
-    background-color: #50bcf2;
-  }
+    background-color: #6BC628;
+}
+input[type=checkbox]:checked ~ div span {
+    color: white;
+}
+article span {
+    color: teal;
+    font-size: 25px;
+    font-weight: bold;
+}
 #CuponContainer {
     display: flex;
     flex-direction: row;
@@ -63,6 +78,10 @@ input[type=checkbox]:checked ~ div {
 }
 #validaCupon{
     margin: 0px 20px 0px 0px;
+    color: white;
+}
+#LabelCupon{
+    color: white;
 }
 #InputCupon {
     margin-left: 15px;
@@ -75,9 +94,7 @@ input[type=checkbox]:checked ~ div {
     flex-direction: row; 
     margin: 15px 0px;
     justify-content: flex-end;
-}
-#PrecioFinalContainer p{
-    margin: 10px 5px;
+    color: white;
 }
 #ButtonContainer {
     display: flex;
@@ -86,8 +103,8 @@ input[type=checkbox]:checked ~ div {
 }
 #ComprarButton {
     width: 50%;
-    height: 50%;
-    margin: 5% 0%;
+    height: 65%;
+    margin: 3% 0%;
     font-size: 18px;
     border-radius: 15px;
     border-color: transparent;
