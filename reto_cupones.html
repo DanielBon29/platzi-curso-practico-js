@@ -9,37 +9,39 @@
 </head>
 <body onload="MostrarCuponYPlan()">
     <header id="CabeceraContainer">
-        <h1 id="Title">Reto Cupones</h1>
+        <img src="https://static.platzi.com/static/images/footer/logo.png" alt="Platzi Logo">
+        <!-- <h1 id="Title">Reto Cupones</h1> -->
     </header>
     <section id="CuerpoContainer">
         <h2 id="MensajeContainer"></h2>
         <div id="ContenidoContainer">
             <span id="ImagenContainer">
-                <img src= "https://static.platzi.com/media/learningpath/emblems/5ce286ac-eeba-47c4-9b5c-10fd69991538.jpg" alt="Escuela de Javascript de Platzi">
+                <img src="https://static.platzi.com/platzi-master/platzi-master-hero.png" alt="Platzi">
+                <!-- <img src= "https://static.platzi.com/media/learningpath/emblems/5ce286ac-eeba-47c4-9b5c-10fd69991538.jpg" alt="Escuela de Javascript de Platzi"> -->
                 <!-- "https://static.platzi.com/media/user_upload/EscuelaJavascript_Exportables_KV_1x1-d5255cd3-9bbd-41c3-956e-429c279189bd.jpg" alt="Escuela de Javascript de Platzi"> -->
             </span>
             <span id="InfoContainer">
-                <h3>Selecciona un plan y no pares de aprender</h3>
+                <h3 id="SelectTitle">Selecciona un plan y no pares de aprender</h3>
                 <div id="PlanesContainer">
                     <article class="PlanBasic">
                         <input type="checkbox" id="PlanBasic" onclick="SeleccionarPlan(id)"/>
                         <div>
-                            <span>BASIC</span>
-                            <span>40 USD mensual</span>
+                            <span class="Plan">BASIC</span>
+                            <span class="Precio">40 USD mensual</span>
                         </div>
                     </article>
                     <article class="PlanExpert">
                         <input type="checkbox" id="PlanExpert" onclick="SeleccionarPlan(id)"/>
                         <div>
-                            <span>EXPERT</span>
-                            <span>250 USD anual</span>
+                            <span class="Plan">EXPERT</span>
+                            <span class="Precio">250 USD anual</span>
                         </div>
                     </article>
                     <article class="PlanExpert+">
                         <input type="checkbox" id="PlanExpert+" onclick="SeleccionarPlan(id)"/>
                         <div>
-                            <span>EXPERT+</span>
-                            <span>300 USD anual</span>
+                            <span class="Plan">EXPERT+</span>
+                            <span class="Precio">  300 USD anual</span>
                         </div>
                     </article>
                 </div>
@@ -50,7 +52,7 @@
                 </div>
                 <h3 id="PrecioFinal"></h3>
                 <span id="ButtonContainer">
-                    <button type="submit" id="ComprarButton">Comprar Ahora</button>
+                    <form action=""><button type="submit" id="ComprarButton">Comprar Ahora</button></form>
                 </span>
             </span>
         </div>

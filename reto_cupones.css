@@ -1,6 +1,27 @@
 body{
-    background-color: teal;
+    margin: 0;
+    background-color: #121f3d;
 }
+#CabeceraContainer {
+    background-color: #121f3d;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%)
+}
+#CabeceraContainer img{
+    object-fit: contain;
+    height: 85%;
+}
+#CuerpoContainer {
+    margin: 0% 6%;
+}
+#MensajeContainer {
+    font-family: Roboto,sans-serif;
+    color: #eff3f8;
+    text-shadow: 1px 1px 2px black, 0 0 1em #98ca3f, 0 0 0.2em #98ca3f;
+}
+
 #ContenidoContainer {
     width: 100%;
     height: 70vh;
@@ -16,14 +37,20 @@ body{
 }
 #ImagenContainer img{
     object-fit: contain;
-    height: 60%;
+    height: 100%;
 }
 #InfoContainer {
     display: flex;
     flex-direction: column;
     width: 70%;
     height: 60%;
-    margin: 3%;
+    margin: 1% 3%;
+}
+#SelectTitle {
+    font-family: Roboto,sans-serif;
+    color: #eff3f8; 
+    font-size: 20px;
+    opacity: 60%;
 }
 #PlanesContainer {
     display: flex;
@@ -35,7 +62,7 @@ article {
     margin: 15px 0px;
     width: 30%;
     height: 150px;
-    border: 0.5px solid gray;
+    border: 0.5px solid #24385b;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -48,7 +75,7 @@ article div {
     align-items: center;
     line-height: 25px;
     border-radius: 10px;
-    background-color: #B2FCE8;
+    background-color: transparent;
 }
 article input {
     position: absolute;
@@ -59,15 +86,29 @@ article input {
     cursor: pointer;
 }
 input[type=checkbox]:checked ~ div {
-    background-color: #6BC628;
+    background-color: #98ca3f;
+}
+.Plan {
+    color: #eff3f8;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+}
+.Precio {
+    color: #eff3f8;
+    font-size: 20px;
+    font-family: Roboto,sans-serif;
+    opacity: 60%;
 }
 input[type=checkbox]:checked ~ div span {
-    color: white;
+    color: #03091e;
 }
+
 article span {
-    color: teal;
-    font-size: 25px;
+    color: #eff3f8;
+    font-size: 20px;
     font-weight: bold;
+    font-family: Roboto,sans-serif;
 }
 #CuponContainer {
     display: flex;
@@ -78,27 +119,43 @@ article span {
 }
 #validaCupon{
     margin: 0px 20px 0px 0px;
-    color: white;
+    color: #eff3f8;
+    font-family: Roboto,sans-serif;
 }
 #LabelCupon{
-    color: white;
+    color: #eff3f8;
+    font-family: Roboto,sans-serif;
+    opacity: 60%;
 }
 #InputCupon {
     margin-left: 15px;
     padding: 1%;
     font-size: 18px;
     text-align: center;
+    font-family: Roboto,sans-serif;
+    background-color: #03091e;
+    border-color: transparent;
+    border-radius: 8px;
+    color: #eff3f8;
 }
 #PrecioFinal {
     display: flex;
     flex-direction: row; 
     margin: 15px 0px;
     justify-content: flex-end;
-    color: white;
+    color: #eff3f8;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
 }
 #ButtonContainer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: center;
 }
 #ComprarButton {
@@ -108,7 +165,8 @@ article span {
     font-size: 18px;
     border-radius: 15px;
     border-color: transparent;
-    background-color: #6BC628 ;
-    color: white;
+    background-color: #98ca3f ;
+    color: #03091e;
     font-weight: bold;
+    cursor: pointer;
 }
